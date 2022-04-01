@@ -1,0 +1,7 @@
+(library
+ (public_name ppx_counters)
+ (modules ppx_counters)
+ (kind ppx_rewriter)
+ (preprocess
+  (pps ppxlib.metaquot))
+ (libraries ppxlib ppxlib.ast))
